@@ -44,7 +44,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraControl.cs" />
+     <Compile Include="Assets\Battle_Space\CameraControl.cs" />
+     <Compile Include="Assets\Battle_Space\Ship scripts\enginesControl.cs" />
+     <Compile Include="Assets\Battle_Space\Ship scripts\testControllUnit.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />

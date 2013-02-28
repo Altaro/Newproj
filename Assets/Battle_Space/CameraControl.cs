@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class CameraControl : MonoBehaviour {
-
+	
 	private Transform myTransform;
 	public float cameraSpeed=40;
 	

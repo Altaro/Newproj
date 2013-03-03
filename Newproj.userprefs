@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle_Space\Ship scripts\enginesControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle_Space\creatorShips.cs">
     <Files>
-      <File FileName="Assets\Battle_Space\Ship scripts\enginesControl.cs" Line="26" Column="19" />
-      <File FileName="Assets\Battle_Space\CameraControl.cs" Line="16" Column="3" />
-      <File FileName="Assets\Battle_Space\Ship scripts\testControllUnit.cs" Line="10" Column="49" />
+      <File FileName="Assets\Battle_Space\creatorShips.cs" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

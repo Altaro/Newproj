@@ -37,7 +37,7 @@ public class creatorShips : MonoBehaviour {
 			
 			testShipClone.name=team+"_"+clone.name+quantity.ToString();//Меняем имя
 			
-			testShipClone.transform.position=new Vector3(x,0,z);//меняем позицию
+			testShipClone.transform.position=new Vector3(x,5,z);//меняем позицию
 				
 			
 			if(team=="Red"){//меняем цвет + расположение

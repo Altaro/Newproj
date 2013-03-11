@@ -8,10 +8,7 @@ public class Cloning : MonoBehaviour {
 	float arena_length = 100;
 	float arena_width = 100;
 		
-	//Относительные координаты относительно размера относительной карты
-	//Выставляем конец карты синих
-	float raw_index = 0;
-	float column_index = 0;
+
 	
 	//Боковое расстояние между кубами, какая часть карты между ними
 	//Т.е. тут, как и в следующем действует обратная пропорциональность - чем больше число, тем меньше расстояние
@@ -24,16 +21,16 @@ public class Cloning : MonoBehaviour {
 	// Use this for initialization
 	void Start()
 	{	
-		CreateShips(0f,0f,"Blue");
+		createShips(0f,0f,10,"Blue","Prefab1");
 		
 		//Делаем то же самое, только для красной стороны
 		//Ололо наш Советский Союз покоряет
 		//Весь мир от Европы
 		//К Неве на восток
 		
-		CreateShips(7f,4f,"Red");
+		createShips(7f,0f,10,"Red","Prefab1");
 	}
-	void CreateShips (float raw_index,float column_index,string team) {
+	void createShips (float raw_index,float column_index,int quantity,string team,string shipType) {
 		
 
 		//ВНЕЗАПНО список объектов
@@ -41,15 +38,24 @@ public class Cloning : MonoBehaviour {
 		//Создаем сколько угодно объектов
 		//column_index - используеться чисто для растояния между кубами
 		//Поправки, которые могут показаться странными - это поправки на размер корабля
-		for(int i = 0;i<5;i++)
+		for(int i = 0;i<quantity;i++)
 		{
-			tShips.AddLast(Instantiate(Resources.Load("Prefabs/Prefab1"),
+			tShips.AddLast(Instantiate(Resources.Load("Prefabs/"+shipType),
 				new Vector3(arena_width/2 - (arena_width/distance_column * column_index) ,
 				10.0f ,
 				arena_length/2 - (arena_length/distance_raw) * raw_index - 5f),
 				Quaternion.identity) as GameObject);
 			
-			tShips.Last.Value.name = team + "0" + i.ToString();
+			
+			tShips.Last.Value.name = team +"_"+ shipType + "_" + "0" + i.ToString();
+			if(team=="Blue"){
+				tShips.Last.Value.tag="Blue";
+				tShips.Last.Value.renderer.material.color=Color.blue;
+			}
+			else{
+				tShips.Last.Value.tag="Red";
+				tShips.Last.Value.renderer.material.color=Color.red;
+			}
 			
 			column_index++;
 			

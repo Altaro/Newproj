@@ -7,8 +7,7 @@ public class creatorShips : MonoBehaviour {
 	
  	public GameObject clone;
 	
-	private string team;
-	private int numberOfSheip=0;
+
 	
 	
 	// Use this for initialization

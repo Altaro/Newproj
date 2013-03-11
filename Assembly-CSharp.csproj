@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Battle_Space\CameraControl.cs" />
+     <Compile Include="Assets\Battle_Space\Ship scripts\aaa.cs" />
      <Compile Include="Assets\Battle_Space\Ship scripts\enginesControl.cs" />
+     <Compile Include="Assets\Battle_Space\Ship scripts\targeting.cs" />
      <Compile Include="Assets\Battle_Space\Ship scripts\testControllUnit.cs" />
      <Compile Include="Assets\Battle_Space\creatorShips.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />

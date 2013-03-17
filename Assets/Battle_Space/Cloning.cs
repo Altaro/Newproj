@@ -21,14 +21,14 @@ public class Cloning : MonoBehaviour {
 	// Use this for initialization
 	void Start()
 	{	
-		createShips(0f,0f,10,"Blue","Prefab1");
+		createShips(0f,0f,100,"Blue","Prefab1");
 		
 		//Делаем то же самое, только для красной стороны
 		//Ололо наш Советский Союз покоряет
 		//Весь мир от Европы
 		//К Неве на восток
 		
-		createShips(7f,0f,10,"Red","Prefab1");
+		createShips(7f,0f,100,"Red","Prefab1");
 	}
 	void createShips (float raw_index,float column_index,int quantity,string team,string shipType) {
 		
@@ -49,6 +49,7 @@ public class Cloning : MonoBehaviour {
 			
 			tShips.Last.Value.name = team +"_"+ shipType + "_" + "0" + i.ToString();
 			if(team=="Blue"){
+				tShips.Last.Value.transform.rotation=new Quaternion(0,180,0,0);
 				tShips.Last.Value.tag="Blue";
 				tShips.Last.Value.renderer.material.color=Color.blue;
 			}

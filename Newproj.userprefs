@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle_Space\Cloning.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle_Space\Ship scripts\targeting.cs">
     <Files>
-      <File FileName="Assets\Battle_Space\Ship scripts\targeting.cs" Line="35" Column="71" />
-      <File FileName="Assets\Battle_Space\Cloning.cs" Line="52" Column="41" />
+      <File FileName="Assets\Battle_Space\Ship scripts\aaa.cs" Line="75" Column="2" />
+      <File FileName="Assets\Battle_Space\Ship scripts\targeting.cs" Line="36" Column="3" />
+      <File FileName="Assets\Battle_Space\Cloning.cs" Line="52" Column="68" />
       <File FileName="Assets\Battle_Space\Ship scripts\testControllUnit.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
